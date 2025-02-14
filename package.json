@@ -1,0 +1,31 @@
+{
+  "name": "auth---project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "dev": "node --watch --trace-warnings --env-file=.env index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngocthach514/Auth---Project----NodeJS.git"
+  },
+  "author": "NgocThach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngocthach514/Auth---Project----NodeJS/issues"
+  },
+  "homepage": "https://github.com/ngocthach514/Auth---Project----NodeJS#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.6",
+    "nodemailer": "^6.10.0"
+  }
+}
