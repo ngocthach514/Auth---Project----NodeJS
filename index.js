@@ -23,10 +23,6 @@ mongoose
     }));
 
 app.use('/api/auth',authRouter);
-
-app.get('/', (req, res) => {
-    res.json({massage: "Hello World!"});
-});
 app.listen(process.env.PORT, ()=> {
     console.log("listening on port " + process.env.PORT);
 });
