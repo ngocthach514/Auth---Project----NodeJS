@@ -59,3 +59,15 @@ exports.acceptFPSchema = Joi.object({
     .required()
     .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*d).{8,}$")),
 });
+
+exports.cretePostSchema = Joi.object({
+  title: Joi.string().min(3).required(),
+  description: Joi.string().min(3).max(600).required(),
+  userID: Joi.string().required(),
+});
+
+exports.updatePostSchema = Joi.object({
+  title: Joi.string().min(3).required(),
+  description: Joi.string().min(3).max(600).required(),
+  userID: Joi.string().required(),
+});

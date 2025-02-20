@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const { default: mongoose } = require('mongoose');
 
 const authRouter = require('./routers/authRouter');
+const postsRouter = require('./routers/postsRouter');
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ mongoose
     }));
 
 app.use('/api/auth',authRouter);
+app.use('/api/posts',postsRouter);
 app.listen(process.env.PORT, ()=> {
     console.log("listening on port " + process.env.PORT);
 });
